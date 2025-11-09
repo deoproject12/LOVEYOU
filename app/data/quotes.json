@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "text": "Cinta bukan tentang menemukan seseorang yang sempurna, tapi tentang menemukan seseorang yang membuat kita ingin menjadi lebih baik.",
+    "author": "Abdullah",
+    "isFeatured": true
+  },
+  {
+    "text": "Setiap hari bersamamu adalah hari yang tak ternilai harganya.",
+    "author": "Naylaa",
+    "isFeatured": true,
+    "id": 3
+  }
+]

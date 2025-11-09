@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Parkinsans } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import ClientLayoutWrapper from "./client-layout-wrapper";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Kisah Cinta Abdullah & Nayla",
+  description: "Website romantis yang menampilkan kenangan cinta Abdullah & Nayla",
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,12 +23,6 @@ const parkinsans = Parkinsans({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Codeguide Starter Fullstack",
-  description:
-    "A modern Next.js starter with TypeScript, TailwindCSS, shadcn/ui, Better Auth, and Drizzle ORM",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,15 +32,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${parkinsans.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>
   );

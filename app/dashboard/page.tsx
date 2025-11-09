@@ -1,18 +1,18 @@
-import { ChartAreaInteractive } from "@//components/chart-area-interactive"
-import { DataTable } from "@//components/data-table"
-import { SectionCards } from "@//components/section-cards"
-import data from "@/app/dashboard/data.json"
+import AdminNav from '@/components/admin-nav';
+import DashboardClient from './dashboard-client';
+import { getGalleryItems, getMemories, getQuotes } from '../lib/server-actions';
 
-export default function Page() {
+export default async function AdminDashboard() {
+  const [gallery, memories, quotes] = await Promise.all([
+    getGalleryItems(),
+    getMemories(),
+    getQuotes()
+  ]);
+
   return (
-    <div className="@container/main flex flex-1 flex-col gap-2">
-      <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
-        <SectionCards />
-        <div className="px-4 lg:px-6">
-          <ChartAreaInteractive />
-        </div>
-        <DataTable data={data} />
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 dark:from-pink-900/20 dark:via-gray-900 dark:to-rose-900/20">
+      <AdminNav />
+      <DashboardClient initialGallery={gallery} initialMemories={memories} initialQuotes={quotes} />
     </div>
-  )
+  );
 }

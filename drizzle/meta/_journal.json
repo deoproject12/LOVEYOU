@@ -8,6 +8,34 @@
       "when": 1756202589329,
       "tag": "0000_overjoyed_morlun",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1762661648670,
+      "tag": "0001_majestic_kabuki",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1762671155269,
+      "tag": "0002_purple_silver_sable",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1762689590843,
+      "tag": "0003_add-navigation-table",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1762695123821,
+      "tag": "0004_add-page-content-table",
+      "breakpoints": true
     }
   ]
 }

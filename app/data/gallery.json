@@ -1,0 +1,20 @@
+[
+  {
+    "imageUrl": "/uploads/0097acb9-5e87-4c7a-bf6e-5e872e28d672-WhatsApp Image 2025-11-09 at 14.35.33 (1).jpeg",
+    "caption": "First photobooth",
+    "isFeatured": true,
+    "id": 3
+  },
+  {
+    "imageUrl": "/uploads/94b8e9ed-47b8-40f4-9dbf-b7f9b590ae0a-WhatsApp Image 2025-11-09 at 14.35.32 (1).jpeg",
+    "caption": "Foto masa kecil",
+    "isFeatured": true,
+    "id": 4
+  },
+  {
+    "imageUrl": "/uploads/8b766323-3018-4b2f-afd7-ffdf4ed59f5c-WhatsApp Image 2025-11-09 at 14.35.32.jpeg",
+    "caption": "jogging date",
+    "isFeatured": true,
+    "id": 5
+  }
+]

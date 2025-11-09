@@ -112,6 +112,7 @@ NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
 - 🔒 Modern authentication patterns
 - 🐳 Full Docker support with multi-stage builds
 - 🚀 Production-ready deployment configuration
+- 💖 **Special Feature**: Romantic website for "Kisah Cinta Abdullah & Nayla" with verification page, timeline, gallery, and admin dashboard
 
 ## Project Structure
 
