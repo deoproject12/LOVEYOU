@@ -1,14 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "serverless": true
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -19,12 +10,6 @@
       "dest": "/$1"
     }
   ],
-  "functions": {
-    "app/api/**/*": {
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  },
   "env": {
     "NEXT_PUBLIC_BETTER_AUTH_URL": "$NEXT_PUBLIC_BETTER_AUTH_URL"
   },
