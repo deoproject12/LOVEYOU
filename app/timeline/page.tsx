@@ -79,7 +79,7 @@ export default function TimelinePage() {
           >
             <Heart className="w-12 h-12 text-pink-500" />
           </motion.div>
-          <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-pink-600 bg-clip-text text-transparent font-parkinsans mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-pink-600 bg-clip-text text-transparent font-geist-sans mb-4">
             Kisah Kami
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">

@@ -75,7 +75,7 @@ export default function MusicPage() {
               >
                 <Music className="w-16 h-16 text-pink-500" />
               </motion.div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-pink-600 bg-clip-text text-transparent font-parkinsans">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-pink-600 bg-clip-text text-transparent font-geist-sans">
                 Lagu Favorit
               </h1>
               <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300">

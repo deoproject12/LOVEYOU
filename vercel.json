@@ -11,12 +11,40 @@
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/$1"
     }
   ],
+  "functions": {
+    "app/api/**/*": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
   "env": {
-    "DATABASE_URL": "your_production_database_url",
-    "GEMINI_API_KEY": "your_gemini_api_key"
-  }
+    "NEXT_PUBLIC_BETTER_AUTH_URL": "$NEXT_PUBLIC_BETTER_AUTH_URL"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
 }

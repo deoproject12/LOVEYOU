@@ -277,6 +277,7 @@ npm run db:dev
    - `DATABASE_URL`: Your managed PostgreSQL connection string
    - `BETTER_AUTH_SECRET`: Generate a secure secret
    - `BETTER_AUTH_URL`: Your Vercel deployment URL
+   - `NEXT_PUBLIC_BETTER_AUTH_URL`: Same as `BETTER_AUTH_URL`
 
 3. **Setup database:**
    ```bash
@@ -291,6 +292,7 @@ npm run db:dev
 DATABASE_URL=postgresql://user:password@host:port/database
 BETTER_AUTH_SECRET=generate-a-very-secure-32-character-key
 BETTER_AUTH_URL=https://yourdomain.com
+NEXT_PUBLIC_BETTER_AUTH_URL=https://yourdomain.com
 
 # Optional optimizations
 NODE_ENV=production
@@ -298,12 +300,12 @@ NODE_ENV=production
 
 ### Production Considerations
 
-- **Database**: Use managed PostgreSQL (AWS RDS, Google Cloud SQL, etc.)
+- **Database**: Use managed PostgreSQL (AWS RDS, Google Cloud SQL, PlanetScale, Supabase, etc.)
 - **Security**: Generate strong secrets, use HTTPS
-- **Performance**: Enable Next.js output: 'standalone' for smaller containers
+- **Performance**: Next.js App Router with Turbopack for optimized builds
 - **Monitoring**: Add logging and health checks
-- **Backup**: Regular database backups
-- **SSL**: Terminate SSL at load balancer or reverse proxy
+- **Backup**: Regular database backups (handled by your database provider)
+- **SSL**: SSL is handled automatically by Vercel
 
 ### Health Checks
 
